@@ -1,4 +1,7 @@
 ---
+#
+# Ansible managed
+#
 repository:
   description: Trust microsofts gpg keys
   homepage: https://robertdebock.nl/
