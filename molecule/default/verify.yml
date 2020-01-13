@@ -18,4 +18,4 @@
             name: azure-cli
             state: present
       when:
-        - ansible_os_family == "Debian"
+        - ansible_distribution == "Ubuntu"

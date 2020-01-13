@@ -58,7 +58,7 @@ After running this role, this playbook runs to verify that everything works, thi
             name: azure-cli
             state: present
       when:
-        - ansible_os_family == "Debian"
+        - ansible_distribution == "Ubuntu"
 ```
 
 Also see a [full explanation and example](https://robertdebock.nl/how-to-use-these-roles.html) on how to use these roles.
