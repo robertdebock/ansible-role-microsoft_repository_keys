@@ -1,8 +1,2 @@
 ---
 # handlers file for microsoft_repository_keys
-- name: restart microsoft_repository_keys
-  service:
-    name: "{{ microsoft_repository_keys_service }}"
-    state: restarted
-  when:
-    - ansible_virtualization_type != "docker"
