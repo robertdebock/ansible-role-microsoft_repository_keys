@@ -16,7 +16,7 @@ env:
   matrix:
     - image="debian" tag="latest"
     - image="debian" tag="bullseye"
-    - image="ubuntu" tag="latest"
+    - image="ubuntu" tag="1804"
 
 cache:
   - pip
