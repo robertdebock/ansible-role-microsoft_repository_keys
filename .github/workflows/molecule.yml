@@ -33,10 +33,28 @@ jobs:
       fail-fast: false
       matrix:
         config:
+          - image: "alpine"
+            tag: "latest"
+          - image: "alpine"
+            tag: "edge"
+          - image: "amazonlinux"
+            tag: "1"
+          - image: "centos"
+            tag: "7"
+          - image: "centos"
+            tag: "latest"
           - image: "debian"
             tag: "latest"
           - image: "debian"
             tag: "bullseye"
+          - image: "fedora"
+            tag: "31"
+          - image: "fedora"
+            tag: "latest"
+          - image: "opensuse"
+            tag: "latest"
+          - image: "ubuntu"
+            tag: "latest"
           - image: "ubuntu"
             tag: "bionic"
     steps:
