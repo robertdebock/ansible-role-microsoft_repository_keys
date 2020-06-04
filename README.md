@@ -2,9 +2,9 @@
 
 Trust microsofts gpg keys
 
-|Travis|GitHub|Quality|Downloads|
-|------|------|-------|---------|
-|[![travis](https://travis-ci.com/robertdebock/ansible-role-microsoft_repository_keys.svg?branch=master)](https://travis-ci.com/robertdebock/ansible-role-microsoft_repository_keys)|[![github](https://github.com/robertdebock/ansible-role-microsoft_repository_keys/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-microsoft_repository_keys/actions)|[![quality](https://img.shields.io/ansible/quality/44614)](https://galaxy.ansible.com/robertdebock/microsoft_repository_keys)|[![downloads](https://img.shields.io/ansible/role/d/44614)](https://galaxy.ansible.com/robertdebock/microsoft_repository_keys)|
+|Travis|GitHub|Quality|Downloads|Version|
+|------|------|-------|---------|-------|
+|[![travis](https://travis-ci.com/robertdebock/ansible-role-microsoft_repository_keys.svg?branch=master)](https://travis-ci.com/robertdebock/ansible-role-microsoft_repository_keys)|[![github](https://github.com/robertdebock/ansible-role-microsoft_repository_keys/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-microsoft_repository_keys/actions)|[![quality](https://img.shields.io/ansible/quality/44614)](https://galaxy.ansible.com/robertdebock/microsoft_repository_keys)|[![downloads](https://img.shields.io/ansible/role/d/44614)](https://galaxy.ansible.com/robertdebock/microsoft_repository_keys)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-microsoft_repository_keys.svg)](https://github.com/robertdebock/ansible-role-microsoft_repository_keys/releases/)|
 
 ## [Example Playbook](#example-playbook)
 
