@@ -40,5 +40,5 @@ script:
 notifications:
   webhooks: https://galaxy.ansible.com/api/v1/notifications/
   slack:
-    secure: "PaqQx+ZZVpOPwKu+F4mSEhzdn+GvapoCTsK4Y9/PruTKCj6ReVhOEACpyD+YbFjNKVZA9BPIUtB/kJ6nz8rixStLpNbqpd5p8lgMwl2pkR9sJonqe9DssSfPOBLq+fgw/7zmS+hU5UBt3sb10EhxJxqTAKEsLLE0rvySA56CDTnqMTlSTSP7cLhQHeUCL5oJkxb5HWwnxwT1hjXUOgM9egql9pX81/3rh4u0IMGVXJP4Uath8Cje7HJkmBalBZfJJDoSAd73kh3NowtOgtZ6IE7UGCVehqXm07Atv2shTgmoo9GrI810+9qiF1NXgrHbpvPRKrlQpF+QIW29gr1gGmKkgJzt6i18bT5xfkwDMHKHDsFGz6hTHsVEuZ4IbjZdgOqzVy7W9UZ1hUqyYgLkmr42Y5BpKO8I1kfFoRwE59IIY1ST/cxDrKM5nf3FDhS+9d4mN9uE6R1y5IEdvQZ9QqaXK0ZQkLIeU6nVPYjBerAQXHLrdMgM7jgwtTpBvmrW6r6gR7tthHvG/mcmqnSpFY/RJr25ga3I/oIafD/eUz0PK26Sf5cfOLksi8zeeT/n9cAU020WBRdDEISCw/1oPsSF8M+WC+eLuBACP67Td/xj0mlBEMJ39vrIVzwginlPuQRdXiLWYcn1ngnO+Co33fmKJaVI/VrxKCpyr2VgXlQ="
+    secure: "UNSET"
   email: false
