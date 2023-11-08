@@ -2,9 +2,9 @@
 
 Trust microsofts gpg keys
 
-|GitHub|GitLab|Quality|Downloads|Version|
-|------|------|-------|---------|-------|
-|[![github](https://github.com/robertdebock/ansible-role-microsoft_repository_keys/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-microsoft_repository_keys/actions)|[![gitlab](https://gitlab.com/robertdebock-iac/ansible-role-microsoft_repository_keys/badges/master/pipeline.svg)](https://gitlab.com/robertdebock-iac/ansible-role-microsoft_repository_keys)|[![quality](https://img.shields.io/ansible/quality/44614)](https://galaxy.ansible.com/robertdebock/microsoft_repository_keys)|[![downloads](https://img.shields.io/ansible/role/d/44614)](https://galaxy.ansible.com/robertdebock/microsoft_repository_keys)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-microsoft_repository_keys.svg)](https://github.com/robertdebock/ansible-role-microsoft_repository_keys/releases/)|
+|GitHub|GitLab|Downloads|Version|
+|------|------|---------|-------|
+|[![github](https://github.com/robertdebock/ansible-role-microsoft_repository_keys/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-microsoft_repository_keys/actions)|[![gitlab](https://gitlab.com/robertdebock-iac/ansible-role-microsoft_repository_keys/badges/master/pipeline.svg)](https://gitlab.com/robertdebock-iac/ansible-role-microsoft_repository_keys)|[![downloads](https://img.shields.io/ansible/role/d/24538)](https://galaxy.ansible.com/robertdebock/microsoft_repository_keys)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-microsoft_repository_keys.svg)](https://github.com/robertdebock/ansible-role-microsoft_repository_keys/releases/)|
 
 ## [Example Playbook](#example-playbook)
 
@@ -77,7 +77,7 @@ The minimum version of Ansible required is 2.12, tests have been done to:
 - The current version.
 - The development version.
 
-If you find issues, please register them in [GitHub](https://github.com/robertdebock/ansible-role-microsoft_repository_keys/issues)
+If you find issues, please register them in [GitHub](https://github.com/robertdebock/ansible-role-microsoft_repository_keys/issues).
 
 ## [License](#license)
 
