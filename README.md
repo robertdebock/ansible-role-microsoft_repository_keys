@@ -1,4 +1,4 @@
-# Ansible role [microsoft_repository_keys](#microsoft_repository_keys)
+# [Ansible role microsoft_repository_keys](#microsoft_repository_keys)
 
 Trust microsofts gpg keys
 
