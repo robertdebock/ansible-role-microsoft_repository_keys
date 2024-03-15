@@ -67,7 +67,7 @@ This role has been tested on these [container images](https://hub.docker.com/u/r
 |[Alpine](https://hub.docker.com/r/robertdebock/alpine)|all|
 |[EL](https://hub.docker.com/r/robertdebock/enterpriselinux)|8, 9|
 |[Debian](https://hub.docker.com/r/robertdebock/debian)|all|
-|[Fedora](https://hub.docker.com/r/robertdebock/fedora/)|37|
+|[Fedora](https://hub.docker.com/r/robertdebock/fedora)|37|
 |[opensuse](https://hub.docker.com/r/robertdebock/opensuse)|all|
 |[Ubuntu](https://hub.docker.com/r/robertdebock/ubuntu)|all|
 
