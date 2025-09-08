@@ -10,6 +10,12 @@ _microsoft_repository_keys_keyring_path:
 
 microsoft_repository_keys_keyring_path: "{{ _microsoft_repository_keys_keyring_path[ansible_os_family] | default(_microsoft_repository_keys_keyring_path['default']) }}"
 
+# System-wide trusted key location for Debian-family (backward compatible for repos without signed-by)
+_microsoft_repository_keys_trusted_path:
+  default: "/etc/apt/trusted.gpg.d/microsoft.gpg"
+
+microsoft_repository_keys_trusted_path: "{{ _microsoft_repository_keys_trusted_path[ansible_os_family] | default(_microsoft_repository_keys_trusted_path['default']) }}"
+
 # Packages required to manage GPG keys per platform
 _microsoft_repository_keys_packages:
   default: []

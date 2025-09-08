@@ -43,6 +43,17 @@
   when:
     - ansible_os_family == "Debian"
 
+- name: Also install key into trusted.gpg.d for repos without signed-by (Debian)
+  ansible.builtin.copy:
+    src: "{{ microsoft_repository_keys_keyring_path }}"
+    dest: "{{ microsoft_repository_keys_trusted_path }}"
+    remote_src: true
+    owner: root
+    group: root
+    mode: '0644'
+  when:
+    - ansible_os_family == "Debian"
+
 - name: Add rpm key
   ansible.builtin.rpm_key:
     key: "{{ microsoft_repository_keys_url }}"
