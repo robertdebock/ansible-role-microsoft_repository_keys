@@ -2,3 +2,18 @@
 # vars file for microsoft_repository_keys
 
 microsoft_repository_keys_url: "https://packages.microsoft.com/keys/microsoft.asc"
+
+# Determine keyring location per platform
+_microsoft_repository_keys_keyring_path:
+  default: "/etc/apt/keyrings/microsoft.gpg"
+  RedHat: "/etc/pki/rpm-gpg/MICROSOFT-GPG-KEY"
+
+microsoft_repository_keys_keyring_path: "{{ _microsoft_repository_keys_keyring_path[ansible_os_family] | default(_microsoft_repository_keys_keyring_path['default']) }}"
+
+# Packages required to manage GPG keys per platform
+_microsoft_repository_keys_packages:
+  default: []
+  Debian:
+    - gnupg
+
+microsoft_repository_keys_packages: "{{ _microsoft_repository_keys_packages[ansible_os_family] | default(_microsoft_repository_keys_packages['default']) }}"

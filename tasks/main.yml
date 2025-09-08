@@ -1,10 +1,45 @@
 ---
 # tasks file for microsoft_repository_keys
 
-- name: Add apt key
-  ansible.builtin.apt_key:
-    url: "{{ microsoft_repository_keys_url }}"
+- name: Ensure required packages are present (Debian)
+  ansible.builtin.package:
+    name: "{{ microsoft_repository_keys_packages }}"
     state: present
+  when:
+    - ansible_os_family == "Debian"
+
+- name: Ensure keyrings directory exists (Debian)
+  ansible.builtin.file:
+    path: "/etc/apt/keyrings"
+    state: directory
+    owner: root
+    group: root
+    mode: '0755'
+  when:
+    - ansible_os_family == "Debian"
+
+- name: Download Microsoft signing key (Debian)
+  ansible.builtin.get_url:
+    url: "{{ microsoft_repository_keys_url }}"
+    dest: "/etc/apt/keyrings/microsoft.asc"
+    mode: '0644'
+  when:
+    - ansible_os_family == "Debian"
+
+- name: Convert Microsoft key to dearmored keyring (Debian)
+  ansible.builtin.command:
+    cmd: "gpg --dearmor -o {{ microsoft_repository_keys_keyring_path }} /etc/apt/keyrings/microsoft.asc"
+    creates: "{{ microsoft_repository_keys_keyring_path }}"
+  when:
+    - ansible_os_family == "Debian"
+
+- name: Set permissions on Microsoft keyring (Debian)
+  ansible.builtin.file:
+    path: "{{ microsoft_repository_keys_keyring_path }}"
+    state: file
+    owner: root
+    group: root
+    mode: '0644'
   when:
     - ansible_os_family == "Debian"
 
