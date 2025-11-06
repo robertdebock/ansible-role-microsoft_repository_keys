@@ -5,4 +5,4 @@
 repository:
   description: Trust microsofts gpg keys
   homepage: https://robertdebock.nl/
-  topics: microsoftrepositorykeys, ansible, molecule, tox, playbook
+  topics: microsoftrepositorykeys, ansible, molecule, playbook
