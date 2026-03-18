@@ -6,7 +6,7 @@
     name: "{{ microsoft_repository_keys_packages }}"
     state: present
   when:
-    - ansible_os_family == "Debian"
+    - ansible_facts['os_family'] == "Debian"
 
 - name: Ensure keyrings directory exists (Debian)
   ansible.builtin.file:
@@ -16,7 +16,7 @@
     group: root
     mode: '0755'
   when:
-    - ansible_os_family == "Debian"
+    - ansible_facts['os_family'] == "Debian"
 
 - name: Download Microsoft signing key (Debian)
   ansible.builtin.get_url:
@@ -24,14 +24,14 @@
     dest: "/etc/apt/keyrings/microsoft.asc"
     mode: '0644'
   when:
-    - ansible_os_family == "Debian"
+    - ansible_facts['os_family'] == "Debian"
 
 - name: Convert Microsoft key to dearmored keyring (Debian)
   ansible.builtin.command:
     cmd: "gpg --dearmor -o {{ microsoft_repository_keys_keyring_path }} /etc/apt/keyrings/microsoft.asc"
     creates: "{{ microsoft_repository_keys_keyring_path }}"
   when:
-    - ansible_os_family == "Debian"
+    - ansible_facts['os_family'] == "Debian"
 
 - name: Set permissions on Microsoft keyring (Debian)
   ansible.builtin.file:
@@ -41,7 +41,7 @@
     group: root
     mode: '0644'
   when:
-    - ansible_os_family == "Debian"
+    - ansible_facts['os_family'] == "Debian"
 
 - name: Also install key into trusted.gpg.d for repos without signed-by (Debian)
   ansible.builtin.copy:
@@ -52,10 +52,10 @@
     group: root
     mode: '0644'
   when:
-    - ansible_os_family == "Debian"
+    - ansible_facts['os_family'] == "Debian"
 
 - name: Add rpm key
   ansible.builtin.rpm_key:
     key: "{{ microsoft_repository_keys_url }}"
   when:
-    - ansible_os_family == "RedHat"
+    - ansible_facts['os_family'] == "RedHat"
