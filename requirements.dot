@@ -1,0 +1,11 @@
+digraph PhiloDilemma {
+  label = "Robert de Bock" ;
+  overlap=false
+  {
+    "microsoft_repository_keys" [fillcolor=yellow style=filled penwidth=3]
+    "robertdebock.bootstrap" [fillcolor=green style=filled]
+    "robertdebock.ca_certificates" [fillcolor=green style=filled]
+  }
+  "microsoft_repository_keys" -> "robertdebock.bootstrap"
+  "microsoft_repository_keys" -> "robertdebock.ca_certificates"
+}
